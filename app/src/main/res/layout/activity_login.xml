@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+         <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/edUserName"
+          android:hint="@string/enter_email"
+          android:text="eve.holt@reqres.in"
+          android:imeOptions="actionNext"
+          android:inputType="textEmailAddress"
+          />
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edPassword"
+      android:hint="@string/enter_password"
+      android:text="cityslicka"
+      android:layout_marginTop="@dimen/_6sdp"
+      android:imeOptions="actionDone"
+      android:inputType="textPassword"
+      android:textColor="@android:color/black"
+      />
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/btnLogin"
+      android:text="Login"
+      android:layout_marginTop="@dimen/_12sdp"
+      android:textColor="@android:color/black"
+      />
+
+
+  </LinearLayout>
+
+        <include android:id="@+id/layoutProgress"
+            layout="@layout/progress_bar"/>
+
+
+    </RelativeLayout>
+
+</layout>
