@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.dwitiyabhatt.dabkotlinmvvmsample.R
+import com.dwitiyabhatt.dabkotlinmvvmsample.views.activities.UserListingActivity
+import com.dwitiyabhatt.dabkotlinmvvmsample.views.adapters.UserListAdapter
 
 
 class SplashActivity : AppCompatActivity() {
@@ -13,7 +15,7 @@ class SplashActivity : AppCompatActivity() {
     private var mDelayHandler : Handler? = null
 
     val runnable : Runnable = Runnable {
-        startActivity(Intent(applicationContext, LoginActivity::class.java))
+        startActivity(Intent(applicationContext, UserListingActivity::class.java))
         finish()
     }
 
